@@ -49,11 +49,12 @@
 /* intro */
 
 .intro {
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(49, 140, 156);
+    background-color: #318c9c;
 }
 
 .intro_inner {
@@ -98,4 +99,17 @@
     color: #fff;
     background-color: #e84545;
     border-radius: 3px;
+}
+
+/* bg_image */
+
+.bg_image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    /* background-image: url(../img/bg/bg.jpg); */
 }
