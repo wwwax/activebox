@@ -11,49 +11,11 @@
     max-width: 1170px;
 }
 
-/* header */
-
-.header {
-    width: 100%;
-}
-
-.header_inner {
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-}
-
-/* menu */
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu_item {
-    margin-left: 50px;
-}
-
-.menu_item:hover .menu_link {
-    color: #e84545;
-}
-
-.menu_link {
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.2s linear;
-}
-
 /* intro */
 
 .intro {
     position: relative;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -85,7 +47,69 @@
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 400;
+    line-height: 1.5;
     color: #ffffff;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .header {
+        background-color: green;
+    }
+}
+
+.header_inner {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu_item {
+    margin-left: 50px;
+}
+
+.menu_item:first-child {
+    margin-left: 0;
+}
+
+.menu_item:hover .menu_link {
+    color: #e84545;
+}
+
+.menu_link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s linear;
+}
+
+/* burger */
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .burger {
+        display: block;
+    }
 }
 
 /* btn */
@@ -113,10 +137,10 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: #808080;
+    background-color: #2b2e4a;
     background-image: url(../img/bg/bg.jpg);
     background-position: center;
-    background-size: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -125,6 +149,6 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #414a4f;
-    opacity: 0.75;
+    background-color: #2b2e4a;
+    opacity: 0.9;
 }
