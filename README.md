@@ -1,2 +1,3 @@
-# activebox
-https://wwwax.github.io/activebox/src/index.html
+# preview
+
+https://wwwax.github.io/activebox
